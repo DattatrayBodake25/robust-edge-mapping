@@ -136,22 +136,6 @@ All outputs are saved in the `outputs/` directory.
 
 ---
 
-## How This Meets Assignment Requirements
-
-| Assignment Requirement | How It Is Addressed |
-|------------------------|---------------------|
-| Bottom contour mapping | DP-based global optimization |
-| Full-width continuity | One pixel per column constraint |
-| Discontinuities | DP smoothness term bridges gaps |
-| Low contrast | CLAHE preprocessing |
-| High spatial frequency | Adaptive smoothness penalty |
-| Noise near edge | Coherence-weighted cost + band restriction |
-| Top contour detection | Independent DP-based detection |
-| Denoise between contours | Exact mask from detected contours |
-| No deep learning | 100% classical CV |
-
----
-
 ## How to Run
 
 1. Place all provided `.bmp` images in the `inputs/` directory.
@@ -172,12 +156,3 @@ python edge_mapping.py
 - The same pipeline works across clean, noisy, low-intensity, and discontinuous images as demonstrated by the outputs.
 
 ---
-
-## Author
-
-**Dattatray**
-
----
-
-End of README
-
